@@ -7,7 +7,8 @@
 .header {
     background-color: #f4e3e9;
 }
-.section1{
+
+.section1 {
     background-color: #f4e3e9;
 }
 
@@ -15,11 +16,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
 }
 
 .container {
     max-width: 1200px;
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -28,9 +30,14 @@
     display: flex;
     gap: 40px;
 
+    @media (max-width: 750px) {
+        display: none;
+    }
+
     a {
         text-decoration: none;
         color: #150101;
+        white-space: nowrap;
 
         &:hover {
             color: #D23166;
@@ -44,24 +51,109 @@
     border: none;
     padding: 15px 50px;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .wrap2 {
     display: flex;
     align-items: center;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        padding-top: 50px;
+    }
 }
 
 .box1 {
     h1 {
         font-size: 60px;
         padding-bottom: 35px;
+
+        @media (max-width: 400px) {
+            font-size: 42px;
+        }
     }
 
     span {
         color: #D23166;
     }
+
+    @media (max-width: 450px){
+        text-align: center;
+    }
 }
 
 .text2 {
     margin-bottom: 50px;
+}
+
+.img1, .img3 {
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.card2 {
+    border: 1px solid lightgray;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    padding: 28px 25px;
+    border-radius: 7px;
+
+    h3 {
+        padding: 20px 0 10px;
+    }
+}
+
+.cards2 {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 600px) {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.section2 {
+    padding: 100px 0;
+}
+
+.section3 {
+    background-color: #F8EDF0;
+    padding: 50px 0;
+}
+
+.wrap3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    
+    @media (max-width: 1000px){
+        flex-direction: column;
+    }
+}
+
+
+.box3 {
+    max-width: 440px;
+    width: 100%;
+
+    p {
+        padding: 20px 0;
+        color: #150101;
+        opacity: 0.5;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+
+    @media (max-width: 450px){
+        text-align: center;
+    }
 }
