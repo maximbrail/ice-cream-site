@@ -78,7 +78,7 @@
         color: #D23166;
     }
 
-    @media (max-width: 450px){
+    @media (max-width: 450px) {
         text-align: center;
     }
 }
@@ -87,7 +87,8 @@
     margin-bottom: 50px;
 }
 
-.img1, .img3 {
+.img1,
+.img3 {
     @media (max-width: 600px) {
         width: 100%;
     }
@@ -132,8 +133,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    
-    @media (max-width: 1000px){
+
+    @media (max-width: 1000px) {
         flex-direction: column;
     }
 }
@@ -153,7 +154,118 @@
         font-size: 44px;
     }
 
-    @media (max-width: 450px){
+    @media (max-width: 450px) {
         text-align: center;
     }
+}
+
+/* SECTION4 */
+
+.section4 {
+    padding: 140px 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 44px;
+}
+
+.menu4 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+    p {
+        font-size: 18px;
+        opacity: 0.7;
+        border-bottom: 2px solid transparent;
+        transition: 0.45s;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+            border-bottom: 2px solid #D64374;
+        }
+    }
+}
+
+.wrap4 {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+    }
+}
+
+.wrap44 {
+    @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.img4 {}
+
+.box4 {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+        opacity: 0.7;
+        margin: 10px 0 35px;
+    }
+
+    q {
+        max-width: 600px;
+        margin: 45px 0;
+        font-size: 16px;
+        opacity: 0.8;
+    }
+}
+
+.wrap444 {
+    .box4 {
+        align-items: end;
+        text-align: right;
+    }
+}
+
+.price4 {
+    margin-bottom: 10px;
+
+    b {
+        font-size: 26px;
+    }
+
+    s {
+        opacity: 0.8;
+        font-style: 20px;
+    }
+}
+
+.user4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        width: 60px;
+    }
+}
+
+.slider4{
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
